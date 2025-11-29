@@ -1,8 +1,17 @@
-//
-// Created by Novin on 11/27/2025.
-//
+#ifndef Spotifun_MUSIC_H
+#define Spotifun_MUSIC_H
 
-#ifndef PROJECT_1_MUSIC_H
-#define PROJECT_1_MUSIC_H
+#include <string>
 
-#endif //PROJECT_1_MUSIC_H
+struct Music {
+    int id;
+    int year;
+    int rating;
+    std::string name;
+    std::string artist_name;
+    std::string lyrics;
+
+    Music(int id, int year, int rating, const std::string& name, const std::string& artist_name, const std::string& lyrics);
+};
+
+#endif //Spotifun_MUSIC_H

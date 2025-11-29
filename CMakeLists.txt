@@ -9,4 +9,5 @@ add_executable(Spotifun
         include/DataStructures.h
         src/Artist.cpp
         src/main.cpp
+        src/Music.cpp
 )
