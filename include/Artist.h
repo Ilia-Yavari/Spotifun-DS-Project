@@ -1,8 +1,35 @@
-//
-// Created by Novin on 11/27/2025.
-//
+#pragma once
+#include <string>
+#include "../include/Music.h"
 
-#ifndef PROJECT_1_ARTIST_H
-#define PROJECT_1_ARTIST_H
+struct Artist {
+public:
+    struct MusicNode {
+        Music* music;
+        MusicNode* next;
+        MusicNode(Music* m) : music(m), next(nullptr) {}
+    };
 
-#endif //PROJECT_1_ARTIST_H
+    Artist( int id, const std::string& name);
+
+    ~Artist();
+
+    int get_id() const;
+
+    const std::string& get_name() const;
+
+    void add_music(Music* m);
+
+    bool remove_music();
+
+    Music* find_music();
+
+    void print_info() const;
+
+    void print_musics() const;
+
+private:
+    int id;
+    std::string name;
+    MusicNode* head;
+};

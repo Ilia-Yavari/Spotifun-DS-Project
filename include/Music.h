@@ -1,6 +1,4 @@
-#ifndef Spotifun_MUSIC_H
-#define Spotifun_MUSIC_H
-
+#pragma once
 #include <string>
 
 struct Music {
@@ -12,6 +10,6 @@ struct Music {
     std::string lyrics;
 
     Music(int id, int year, int rating, const std::string& name, const std::string& artist_name, const std::string& lyrics);
-};
 
-#endif //Spotifun_MUSIC_H
+    void print_details() const;
+};

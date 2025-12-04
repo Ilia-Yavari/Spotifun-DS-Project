@@ -10,4 +10,14 @@ add_executable(Spotifun
         src/Artist.cpp
         src/main.cpp
         src/Music.cpp
+        include/ArtistManager.h
+        src/ArtistManager.cpp
+        src/DataStructures.cpp
+        src/Stack.cpp
+        include/SpotifunManager.h
+        src/SpotifunManager.cpp
+        include/Playlist.h
+        src/Playlist.cpp
+        include/PlaylistManager.h
+        src/PlaylistManager.cpp
 )
